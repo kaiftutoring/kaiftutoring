@@ -1,0 +1,105 @@
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/* the html element*/
+:root {
+    /* set variables */
+    --light-green: #CFFFB3;
+    --green: #ADE25D;
+    --yellow: #FCEC52;
+    --blue: #3B7080;
+    --dark-green: #3A5743;
+    --white: #fff;
+    --dark: #1b1b1b;
+
+    font-family: "Open Sans", sans-serif;
+}
+
+/*swap colours on hover*/
+a:hover {
+    background-color: var(--light-green);
+    color: var(--blue);
+}
+
+a:visited,
+a:active {
+    border-radius: 0.5em;
+    /*rounded corners*/
+    background-color: var(--dark-green);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 1em;
+    box-shadow: .1em .1em 0.5em #000;
+    color: #fff;
+    /*remove underline*/
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(transparent, var(--light-green));
+    min-height: 100vh;
+}
+
+/* box and stylingaround all the content for each page
+for both main and section */
+main {
+    display: flex;
+    max-width: 80vw;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    background-color: var(--green);
+    padding: 2.5em;
+    box-shadow: .1em .1em 0.5em #000;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 70vw;
+    margin: 5em 0;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
+
+    color: var(--blue);
+}
+
+.icon-large {
+    font-size: 15em !important;
+}
+
+.titl {
+    font-weight: bold;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+#mainintro {
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+div>h2 {
+    padding: 1em;
+}
+
+div>a:first-child {
+    padding-right: 1em;
+}
