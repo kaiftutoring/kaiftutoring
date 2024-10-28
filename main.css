@@ -22,10 +22,9 @@ a:hover {
     color: var(--blue);
 }
 
-a:visited,
+/* a:visited,
 a:active {
     border-radius: 0.5em;
-    /*rounded corners*/
     background-color: var(--dark-green);
     color: #fff;
     text-align: center;
@@ -35,10 +34,10 @@ a:active {
     padding: 1em 1em;
     box-shadow: .1em .1em 0.5em #000;
     color: #fff;
-    /*remove underline*/
     text-decoration: none;
-}
+} */
 
+/* centres it */
 body {
     background: linear-gradient(transparent, var(--light-green));
     min-height: 100vh;
@@ -54,6 +53,7 @@ main {
     margin-right: auto;
 }
 
+/* makes it into a box */
 section {
     background-color: var(--green);
     padding: 2.5em;
@@ -67,39 +67,27 @@ section {
     margin: 5em 0;
 }
 
-.material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 48;
-
-    color: var(--blue);
-}
-
-.icon-large {
-    font-size: 15em !important;
-}
-
-.titl {
-    font-weight: bold;
-}
-
-.info {
-    display: flex;
-    flex-direction: row;
-    gap: 2em;
-}
-
 #mainintro {
     font-size: 1.2em;
     font-weight: bolder;
+    padding: 1em 0;
 }
 
-div>h2 {
+header>div {
+    display: flex;
+    flex-direction: row;
+    padding-right: 1 em;
+    gap: 1em;
+}
+
+th:first-child {
+    font-weight: bold;
+}
+
+table {
+    text-align: left;
+}
+
+th {
     padding: 1em;
-}
-
-div>a:first-child {
-    padding-right: 1em;
 }
